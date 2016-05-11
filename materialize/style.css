@@ -1,0 +1,21 @@
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;}
+
+#form_center{
+  margin-top: 70px;
+}
+#form_button{
+  margin-left: 30px;
+}
+#div_center{
+  margin-left: 400px;
+}
+#but{
+  margin-left: 10px;
+}
