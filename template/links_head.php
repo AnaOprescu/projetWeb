@@ -1,5 +1,6 @@
+<!-- this is the page that contains all of the links of the project -->
   <!-- to be able to read all tipes of characters -->
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <!--Import own CSS page-->
   <link href="../materialize/style.css" rel="stylesheet">
     <!--Import Google Icon Font-->
