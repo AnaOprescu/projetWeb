@@ -31,19 +31,19 @@
     </div>
 
     <div class="col s12 m8 l4">
-    <form class="col s12">
+    <form class="col s12" action="../functions/f_city.php" method="post">
       <div class="row">
         <div class="input-field col s6">
-          <input id="name" type="text" class="validate">
-          <label for="name">Name</label>
+          <input id="name" type="text" class="validate" name="name">
+          <label for="name" name="name">Name</label>
         </div>
         <div class="input-field col s6">
           <input id="country" type="text" class="validate">
           <label for="country">Country</label>
         </div>
         <div class="input-field col s12">
-          <input id="location" type="text" class="validate">
-          <label for="location">Location</label>  <!--sa fac un trigger ceva, in caz ca nu respecta asta -->
+          <input id="location" type="text" class="validate" name="location">
+          <label for="location" name="location">Location</label>  <!--sa fac un trigger ceva, in caz ca nu respecta asta -->
         </div>
             <button class="btn waves-effect waves-light orange lighten-2" type="submit" name="action" id="but">Register
               <i class="material-icons right">send</i>

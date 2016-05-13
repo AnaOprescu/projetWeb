@@ -31,35 +31,31 @@
     </div>
 
     <div class="col s12 m8 l4">
-    <form class="col s12">
+    <form class="col s12" action="../functions/f_country.php" method="post">
       <div class="row">
         <div class="input-field col s6">
-          <input id="name" type="text" class="validate">
-          <label for="name">Name</label>
+          <input id="name" type="text" class="validate" name="name">
+          <label for="name" name="name">Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="capital" type="text" class="validate">
-          <label for="capital">Capital</label>
+          <input id="capital" type="text" class="validate" name="capital">
+          <label for="capital" name="capital">Capital</label>
         </div>
         <div class="input-field col s12">
-          <input id="currency" type="text" class="validate">
-          <label for="currency">Currency</label>  <!--sa fac un trigger ceva, in caz ca nu respecta asta -->
+          <input id="currency" type="text" class="validate" name="currency">
+          <label for="currency" name="currency">Currency</label>  <!--sa fac un trigger ceva, in caz ca nu respecta asta -->
         </div>
         <div class="input-field col s12">
-          <input id="language" type="text" class="validate">
-          <label for="language">Official language(s)</label>
+          <input id="language" type="text" class="validate" name="language">
+          <label for="language" name="language">Official language(s)</label>
         </div>
-      </div>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Known by</label>
+              <textarea id="textarea1" class="materialize-textarea" name="tips"></textarea>
+              <label for="textarea1" name="tips">Known by</label>
             </div>
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Important phrases to know</label>
+              <textarea id="textarea1" class="materialize-textarea" name="phrases"></textarea>
+              <label for="textarea1" name="phrases">Important phrases to know</label>
             </div>
             <button class="btn waves-effect waves-light orange lighten-2" type="submit" name="action" id="but">Register
               <i class="material-icons right">send</i>
@@ -68,10 +64,8 @@
         </form>
       </div>
     </div>
-  </form>
 </div>
-</div>
-</div>
+
 
 </main>
 <!-- the footer part-->

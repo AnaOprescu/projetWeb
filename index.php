@@ -1,13 +1,14 @@
+<?php ?>
 <!doctype html>
 <html>
  <head>
    <title>Erasmus - A life chainging experience</title>
-     <?php include('./template/links_head.php'); ?>
+     <?php include('../template/links_head.php'); ?>
  </head>
 
   <body>
 <!--the header part -->
-<?php include('./template/header.php'); ?>
+<?php include('../template/header.php'); ?>
 
 <!--the body of the home page -->
 <main>
@@ -18,19 +19,19 @@
         <div class="slider">
               <ul class="slides">
                 <li>
-                    <img class="img-responsive" src="./images/you.jpg">
+                    <img class="img-responsive" src="../images/you.jpg">
                     <div class="caption left-align">
                         <h3>Discover yourself</h3>
                     </div>
                 </li>
                   <li>
-                    <img class="img-responsive" src="./images/fr.jpg">
+                    <img class="img-responsive" src="../images/fr.jpg">
                       <div class="caption left-align">
                           <h3>Making new friends</h3>
                       </div>
                   </li>
                   <li>
-                      <img class="img-responsive" src="./images/travel.jpg">
+                      <img class="img-responsive" src="../images/travel.jpg">
                       <div class="caption left-align">
                           <h3>Travel</h3>
                       </div>
@@ -40,6 +41,6 @@
 
 <!-- the footer part-->
 </main>
-  <?php include('./template/footer.php'); ?>
+  <?php include('../template/footer.php'); ?>
 </body>
 </html>

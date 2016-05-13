@@ -21,28 +21,28 @@
 </div>
 <div class="col s12 m4 l2">&nbsp;</div>
 </div>
+
     <div class="row" id="form_center">
-      <form class="col s12">
+      <form class="col s12" method="post" action="../controller/c_login.php">
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label for="icon_prefix">Name</label>
+            <input id="pseudo" type="text" class="validate" name="pseudo">
+            <label for="pseudo" name="pseudo">pseudo</label>
           </div>
           <div class="input-field col s6">
             <i class="material-icons prefix">vpn_key</i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">Password</label>
+            <input id="password" type="password" class="validate" name="password">
+            <label for="password" name="password">password</label>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
+      </div>
 
-   <button class="btn waves-effect waves-light orange lighten-2" type="submit" name="action" id="form_button">Submit
+    <button class="btn waves-effect waves-light orange lighten-2" type="submit" name="action" id="form_button" value="Login">Submit
     <i class="material-icons right">send</i>
   </button>
 
+</form>
 <!-- the footer part-->
 </main>
 <!-- the footer part-->
