@@ -31,23 +31,24 @@
     </div>
 
     <div class="col s12 m8 l4">
-    <form class="col s12">
+    <form class="col s12" action="../functions/f_suggestion.php" method="post">
       <div class="row">
         <div class="input-field col s12">
-          <input id="city" type="text" class="validate">
-          <label for="city">City</label>
+          <input id="country_suggestion" type="text" class="validate" name="country_suggestion">
+          <label for="country_suggestion" name="country_suggestion">Country</label>
         </div>
         <div class="input-field col s12">
-          <input id="country" type="text" class="validate">
-          <label for="country">Country</label>
+          <input id="city_suggestion" type="text" class="validate" name="city_suggestion">
+          <label for="city_suggestion" name="city_suggestion">City</label>
         </div>
+
            <button class="btn waves-effect waves-light orange lighten-2" type="submit" name="action" id="but">Send
               <i class="material-icons right">note_add</i>
             </button>
+
       </div>
-    </div>
-  </form>
-</div>
+   </form>
+  </div>
 </div>
 </div>
 

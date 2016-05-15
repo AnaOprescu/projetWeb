@@ -18,7 +18,7 @@
   <div class="col s12 m4 l8">
     <div class="icon-block">
       <h2 class="center light-blue-text"><i class="fa fa-user-plus"></i></h2>
-      <h5 class="center"> Become a memebre </h5>
+      <h5 class="center"> Become a membre </h5>
   </div>
   <div class="col s12 m4 l2">&nbsp;</div>
 </div>
@@ -35,8 +35,8 @@
     <form class="col s12" action="../functions/f_user.php" method="post">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" name="first_name" type="text" class="validate">
-          <label for="first_name" name="first_name" >First Name</label>
+          <input id="first_name" required name="first_name" type="text" class="validate" >
+          <label for="first_name" name="first_name"  >First Name</label>
         </div>
         <div class="input-field col s6">
           <input id="last_name" type="text"  name="last_name"class="validate">

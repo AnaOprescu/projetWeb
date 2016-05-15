@@ -1,13 +1,12 @@
 <?php
-        //connect at the data base
-        require("../connectdb_pdo.php");
+// Je me connecte à la base de données
 
-        // posted values
+        require("../connectdb_pdo.php");
+        //Sécurisation des données saisies
         $pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
         $password = htmlentities($_POST['password'],ENT_QUOTES);
-
-        //check if the user exists in the data base
-        $reponse_admin = $bdd->prepare('SELECT is_admin FROM membre WHERE pseudo = ?');
+        //On vérifie que le login existe dans la table
+        $reponse_admin = $bdd->prepare('SELECT isadmin FROM membre WHERE pseudo = ?');
         $reponse_admin->execute(array($pseudo));
         $droit =  $reponse_admin->fetch();
         if(!isset($_COOKIE["user"]))
@@ -19,8 +18,8 @@
                 if($count[0] == 0)
                 {
                     echo "Erreur pseudo. Veuillez vous réauthentifier ou vous inscrire";
-                    header('Location: ../modules/LogIn.php');
-
+                    header('Location:../modules/LogIn.php');
+                    //Exception, erreur ou ce que tu désires
                 }
                 else { //Login existant
 
@@ -35,25 +34,26 @@
                     if ($donnees == true)
                     {
 
-                        if ($droit['is_admin'] == 'membre'){
+                        if ($droit['isadmin'] == 'membre'){
+                            echo "c'est un abonne";
                             header('Location: ../modules/User_login.php');
                         }
                         else{
+                             echo "c'est un admin";
                              header('Location: ../modules/Admin.php');
                             }
                         setcookie("user",$pseudo,mktime()+(100000),"/");
                     }
                     else{
-
-                    header('Location: ../modules/LogIn.php');
+                        header('Location: ../modules/LogIn.php');
                     }
                 }
            }
        }
             elseif(isset($_COOKIE["user"]))
             {
-                if ($droit['is_admin'] == 'membre'){
-                    header('Location: ../modules/User_login.php');
+                if ($droit['isadmin'] == 'membre'){
+                  header('Location: ../modules/User_login.php');
                     exit();
                 }
                 else{

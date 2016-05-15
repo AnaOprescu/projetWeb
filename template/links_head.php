@@ -2,7 +2,7 @@
   <!-- to be able to read all tipes of characters -->
   <meta charset="UTF-8"/>
   <!--Import own CSS page-->
-  <link href="../materialize/style.css" rel="stylesheet">
+  <link href="../framework/materialize/style.css" rel="stylesheet">
     <!--Import Google Icon Font-->
    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--Import CSS library-->

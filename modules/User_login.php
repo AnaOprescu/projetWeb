@@ -20,7 +20,7 @@
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">language</i></h2>
-              <h5 class="center">List of countries</h5>
+              <h5 class="center"><a href="../modules/List_countries.php">List of countries</h5>
               <p>This part is reserved to diplay the list of the countries available, from where you can find the cities and members.</p>
             </div>
           </div>
@@ -28,7 +28,7 @@
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">List of members</h5>
+              <h5 class="center"><a href="../modules/List_members.php">List of members</h5>
               <p>This part is reserved to diplay the list of members os this site which are erasmus or a pre-erasmus student that has not already decided what to do.</p>
             </div>
           </div>

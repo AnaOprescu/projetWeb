@@ -1,3 +1,5 @@
+<?php include("../controller/c_cookie.php");?>
+
 <!doctype html>
 <html>
  <head>
@@ -27,12 +29,12 @@
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="pseudo" type="text" class="validate" name="pseudo">
+            <input id="pseudo" type="text" class="validate" name="pseudo" required>
             <label for="pseudo" name="pseudo">pseudo</label>
           </div>
           <div class="input-field col s6">
             <i class="material-icons prefix">vpn_key</i>
-            <input id="password" type="password" class="validate" name="password">
+            <input id="password" type="password" class="validate" name="password" required>
             <label for="password" name="password">password</label>
           </div>
         </div>
