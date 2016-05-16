@@ -1,5 +1,4 @@
 <!-- Button to trigger modal -->
-<a class="btn btn-primary" href="#myModal" data-toggle="modal">Click Here To Add</a>
 <br>
 <br>
 <br>
@@ -42,6 +41,21 @@
             <td><label style="color:#3a87ad; font-size:18px;">Facebook name</label></td>
             <td width="30"></td>
             <td><input type="text" name="fb_name" placeholder="fb_name" required /></td>
+          </tr>
+          <tr>
+            <td><label style="color:#3a87ad; font-size:18px;">Pseudo</label></td>
+            <td width="30"></td>
+            <td><input type="text" name="pseudo" placeholder="Pseudo" required /></td>
+          </tr>
+          <tr>
+            <td><label style="color:#3a87ad; font-size:18px;">Country of origin</label></td>
+            <td width="30"></td>
+            <td><input type="text" name="country_origin" placeholder="Country_origin" required /></td>
+          </tr>
+          <tr>
+            <td><label style="color:#3a87ad; font-size:18px;">City of origin</label></td>
+            <td width="30"></td>
+            <td><input type="text" name="city_origin" placeholder="City_origin" required /></td>
           </tr>
           <tr>
             <td><label style="color:#3a87ad; font-size:18px;">Facebook name</label></td>

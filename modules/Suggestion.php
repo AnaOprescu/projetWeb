@@ -38,7 +38,7 @@
           <label for="country_suggestion" name="country_suggestion">Country</label>
         </div>
         <div class="input-field col s12">
-          <input id="city_suggestion" type="text" class="validate" name="city_suggestion">
+          <input id="city_suggestion" type="text" class="validate" name="city_suggestion" required>
           <label for="city_suggestion" name="city_suggestion">City</label>
         </div>
 

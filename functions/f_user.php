@@ -1,6 +1,8 @@
 <?php
 if($_POST){
 
+//function to add a new membre
+
     // include database connection
     include '../connectdb_pdo.php';
 
@@ -35,6 +37,9 @@ if($_POST){
         $stmt->bindParam(':password', $password);
         $stmt->bindParam(':country_dest', $country_dest);
         $stmt->bindParam(':city_dest', $city_dest);
+
+        //make the password secure
+        $password=sha1($password);
 
         // Execute the query
         if($stmt->execute()){

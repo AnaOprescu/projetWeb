@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
  <head>
-   <title>Erasmus - A life chainging experience</title>
+   <title> Log in page </title>
      <?php include('../template/links_head.php'); ?>
  </head>
 

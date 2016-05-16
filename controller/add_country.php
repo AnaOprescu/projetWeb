@@ -1,4 +1,6 @@
 <?php
+
+//add a country to the data base
 require_once('../connectdb_pdo.php');
 
 $name= $_POST['name'];

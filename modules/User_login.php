@@ -13,42 +13,45 @@
 <main>
  <!-- this part is created  to diplay the page for the users-->
   <div class="container">
-      <div class="section">
+
 
         <!--   Icon Section   -->
         <div class="row">
-          <div class="col s12 m4">
+          <div class="col s3">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">language</i></h2>
-              <h5 class="center"><a href="../modules/List_countries.php">List of countries</h5>
+              <h5 class="center"><a href="../modules/List_countries.php">List of countries</a></h5>
               <p>This part is reserved to diplay the list of the countries available, from where you can find the cities and members.</p>
             </div>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s3">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center"><a href="../modules/List_members.php">List of members</h5>
+              <h5 class="center"><a href="../modules/List_members.php">List of members</a></h5>
               <p>This part is reserved to diplay the list of members os this site which are erasmus or a pre-erasmus student that has not already decided what to do.</p>
             </div>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s3">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">language</i></h2>
+              <h5 class="center"><a href="../modules/List_cities.php">List of cities</a></h5>
+              <p>This part is reserved to diplay the list of the cities available, their location </p>
+            </div>
+          </div>
+
+
+
+          <div class="col s3">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">note_add</i></h2>
               <h5 class="center"><a href="../modules/Suggestion.php">Suggestion</a></h5>
-              <p>This part is created specially for any student that would like to add a new country or city, which after will be included by us on the official list. </p>
+              <p>This part is created specially for any student that would like to add a new city, which after will be included by us on the official list. </p>
             </div>
           </div>
         </div>
 
-      </div>
-      <br><br>
-
-      <div class="section">
-
-      </div>
-    </div>
 
 </main>
 <!-- the footer part-->

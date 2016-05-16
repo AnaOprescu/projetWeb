@@ -31,14 +31,14 @@
     </div>
 
     <div class="col s12 m8 l4">
-    <form class="col s12" action="../functions/f_city.php" method="post">
+    <form class="col s12" action="../controller/c_fk.php" method="post">
       <div class="row">
         <div class="input-field col s6">
           <input id="name" type="text" class="validate" name="name">
           <label for="name" name="name">Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="country" type="text" class="validate">
+          <input id="country" type="text" class="validate" name="country_name">
           <label for="country">Country</label>
         </div>
         <div class="input-field col s12">

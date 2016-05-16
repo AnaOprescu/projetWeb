@@ -1,4 +1,6 @@
 <?php
+
+//second function trying to add a city
 if($_POST){
 
     // include database connection

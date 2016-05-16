@@ -1,6 +1,8 @@
 <?php
 if($_POST){
 
+//function to add a suggestion of  a city/country
+
     // include database connection
     include '../connectdb_pdo.php';
 
@@ -23,9 +25,9 @@ if($_POST){
 
         // Execute the query
         if($stmt->execute()){
-            echo "<div>Record was saved.</div>";
+            include '../modules/Suggestion.php';
         }else{
-            die('Unable to save record.');
+            die('This city is already in the data base.');
         }
 
     }

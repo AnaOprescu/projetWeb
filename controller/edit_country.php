@@ -1,4 +1,6 @@
 <?php
+
+//edit and update the attributs of a country
 include '../connectdb_pdo.php';
 
 $get_id=$_REQUEST['idCountry'];

@@ -1,4 +1,6 @@
 <?php
+
+//add a membre to the data base
 require_once('../connectdb_pdo.php');
 
 $first_name= $_POST['first_name'];
