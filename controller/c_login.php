@@ -7,7 +7,9 @@
         $pseudo = htmlentities($_POST['pseudo'],ENT_QUOTES);
         $password = htmlentities($_POST['password'],ENT_QUOTES);
 
-      
+        //make the password secure
+        $password=sha1($password);
+
         //we check to see if they are on the data base
         $reponse_admin = $bdd->prepare('SELECT isadmin FROM membre WHERE pseudo = ?');
         $reponse_admin->execute(array($pseudo));
@@ -38,6 +40,7 @@
                             header('Location: ../modules/User_login.php');
                         }
                         else{
+
                              header('Location: ../modules/Admin.php');
                             }
                         setcookie("user",$pseudo,mktime()+(100000),"/");
